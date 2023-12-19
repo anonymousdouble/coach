@@ -25,9 +25,7 @@ from rl_coach.dashboard_components.globals import x_axis, x_axis_options, show_s
 class SignalsFileBase:
     def __init__(self, plot):
         self.plot = plot
-        self.full_csv_path = ""
-        self.dir = ""
-        self.filename = ""
+        self.full_csv_path = self.dir = self.filename = ""
         self.signals_averaging_window = 1
         self.show_bollinger_bands = False
         self.csv = None
